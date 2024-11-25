@@ -1,0 +1,42 @@
+input:
+  input_folder: /home/giorgia/Desktop/pixel/thermal_cycles/
+
+  input_files: 
+    - "openBumps_xray_1x2C6_beforeCycles.csv"
+    - "openBumps_xray_1x2C6_20cycles_[-35,+40].csv"
+    - "openBumps_xray_1x2C6_30cycles_[-35,+40].csv"
+    - "openBumps_xray_1x2C6_40cycles_[-40,+40].csv"
+    - "openBumps_xray_1x2C6_50cycles_[-45,+40].csv"
+    - "openBumps_xray_1x2C6_60cycles_[-50,+40].csv"
+    - "openBumps_xray_1x2C6_70cycles_[-55,+40].csv"
+    - "openBumps_xray_1x2C6_80cycles_[-55,+40].csv"
+
+#  input_multiple_modules:
+#    - "1x2C6_xray.csv"
+#    - "1x2CH10_xray.csv" 
+#    - "1x2C12_xray.csv"
+#    - "1x2C14_xray.csv"
+
+output:
+  output_folder: /home/giorgia/Desktop/pixel/thermal_cycles/
+
+plotting: 
+  is_dual: true
+  
+  module_list: 
+  - "1x2C6" 
+  
+  chip_id:
+  - 0
+  - 1
+
+color_list: 
+  CMS_orange: "#ffa90e"
+  CMS_blue: "#3f90da"
+  CMS_red: "#bd1f01"
+  CMS_light_blue: "#92dadd"
+  CMS_purple: "#832db6"
+  CMS_dark_orange: "#e76300"
+  CMS_grey: "#94a4a2"
+  CMS_brown: "#a96b59"
+   
